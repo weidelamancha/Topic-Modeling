@@ -1,3 +1,7 @@
+# Author: Wei Wang
+# Upload date: 2017.08.06
+
+
 # Python 3
 
 import re
