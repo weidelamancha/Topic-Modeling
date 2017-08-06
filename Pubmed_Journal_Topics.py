@@ -2,8 +2,6 @@
 
 import re
 
-import numpy as np
-
 from Bio import Entrez, Medline
 Entrez.email = 'Email'
 
