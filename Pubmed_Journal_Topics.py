@@ -5,7 +5,7 @@ import re
 import numpy as np
 
 from Bio import Entrez, Medline
-Entrez.email = 'weidelamancha@gmail.com'
+Entrez.email = 'Email'
 
 from nltk.stem import SnowballStemmer
 
@@ -33,15 +33,12 @@ def gather_pubmed_journal_article_titles(journal, mindate, maxdate):
 
 	file.close()
 
-'''
-gather_pubmed_journal_article_titles(journal = 'Cell', mindate = '2010', maxdate = '2017')
-'''
 
 def generate_topics(journal, num_topics, num_words, passes):
 # num_words: number of words we want to see from each topic (defult is 10)
 # passes: times to go over the data. 1 can be used for large corpus	
 
-	filename = '{}_article_titles.txt'.format(journal, journal)	
+	filename = '{}_article_titles.txt'.format(journal)	
 
 	with open(filename) as f:
 		documents = f.readlines()	
@@ -83,6 +80,3 @@ def generate_topics(journal, num_topics, num_words, passes):
 	        listItems = term.split('*')
 	        print('  ', listItems[1], '(', listItems[0], ')', sep = '')
 	'''
-'''
-generate_topics(journal = 'Cell', num_topics = 6, num_words = 5, passes = 20)
-'''
