@@ -55,10 +55,7 @@ def generate_topics(journal, num_topics, num_words, passes):
 	
 
 	# LDA model 
-	lda = LdaModel(corpus,
-		id2word = dictionary, 
-		num_topics = num_topics, 
-		passes = passes)	
+	lda = LdaModel(corpus, id2word = dictionary, num_topics = num_topics, passes = passes)	
 
 	for topic in lda.print_topics(num_words = num_words):
 	    topicNumber = topic[0]
@@ -71,8 +68,7 @@ def generate_topics(journal, num_topics, num_words, passes):
 
 	'''
 	# HDP model
-	hdp = HdpModel(corpus,
-		id2word = dictionary)	
+	hdp = HdpModel(corpus, id2word = dictionary)	
 
 	for topic in hdp.print_topics(num_words = num_words):
 	    topicNumber = topic[0]
