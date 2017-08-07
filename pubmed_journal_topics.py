@@ -7,7 +7,7 @@
 import re
 
 from Bio import Entrez, Medline
-Entrez.email = 'Email'
+Entrez.email = 'YOUR EMIAL'
 
 from nltk.stem import SnowballStemmer
 
