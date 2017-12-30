@@ -1,3 +1,5 @@
 # Topic Modeling
-My attempts using PubMed database.
-Pubmed_Journal_Topics wants to generate topics appeared in a specific journal by using article titles.
+
+**Purpose**
+
+To generate topics appeared in a specific journal by iterating through titles of articles published in the journal using PubMed database.
